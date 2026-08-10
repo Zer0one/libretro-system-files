@@ -23,6 +23,7 @@ rm -rf "$SYSTEM_DIR"
 mkdir -p "${SYSTEM_DIR}/res"
 cp -r "${REPO_PATH}/roms/roms.txt" "$SYSTEM_DIR"
 cp -r "${REPO_PATH}/docs/license.txt" "${SYSTEM_DIR}/res"
+cp -r "${REPO_PATH}/res/music.list" "${SYSTEM_DIR}/res"
 cp -r "${REPO_PATH}/res/tilemap.bin" "${SYSTEM_DIR}/res"
 cp -r "${REPO_PATH}/res/tilepatch.bin" "${SYSTEM_DIR}/res"
 
