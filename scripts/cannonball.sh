@@ -5,14 +5,15 @@ set -e
 SCRIPT_DIR="$(dirname $(which $0))"
 source "$(realpath "${SCRIPT_DIR}/lib/common.sh")"
 
-REPO_URL="https://github.com/libretro/cannonball.git"
+REPO_URL="https://github.com/Zer0one/cannonball.git"
 REPO_NAME="cannonball"
 REPO_PATH="${SRC_REPOS_DIR}/${REPO_NAME}"
+REPO_BRANCH="cannonball-modern"
 
 SYSTEM_DIR="cannonball"
 ARCHIVE_FILE="${OUT_DIR}/Cannonball (ROMs Required).zip"
 
-if ! update_src_repo "$REPO_URL" "$REPO_NAME"
+if ! update_src_repo "$REPO_URL" "$REPO_NAME" "$REPO_BRANCH"
 then
 	exit 1
 fi
